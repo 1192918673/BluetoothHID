@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.mega.bluetoothhid"
+	android:sharedUserId="android.uid.system">
+
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+	<application
+		android:label="@string/app_name"
+		android:name=".MegaHidApplication"
+		android:allowBackup="false"
+		android:persistent="true">
+
+		<activity android:name=".view.TouchActivity"
+			android:exported="true"
+			android:launchMode="singleTask"
+			android:configChanges="screenSize|orientation|keyboardHidden|smallestScreenSize|screenLayout"
+			android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustNothing">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+	</application>
+</manifest>
+

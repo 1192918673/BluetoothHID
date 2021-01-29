@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TouchScreen</string>
+    <string name="btn_select">select device</string>
+</resources>
