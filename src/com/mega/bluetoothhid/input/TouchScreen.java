@@ -290,7 +290,7 @@ public class TouchScreen implements HidDescription {
 				//Log.d(TAG, "5.x="+x+",dx="+dx+",y="+y+",dy="+dy);
 
 				ByteBuffer report = ByteBuffer.allocate(3);
-				report.put(0, (byte) 2); //move
+				report.put(0, (byte) 0); //move
 				report.put(1, (byte) dx);
 				report.put(2, (byte) dy);
 				Log.d(TAG, "report queue add element! dx="+dx+",dy="+dy);
